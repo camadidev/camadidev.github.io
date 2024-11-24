@@ -1,4 +1,21 @@
 /* css para nuestra Inicio*/
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
 .bannerprincipal{
     width: 100%;
+}
+
+.principal{
+    padding: 3cm 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
 }

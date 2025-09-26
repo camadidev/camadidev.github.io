@@ -1,4 +1,4 @@
-import { type AppItem } from '../types/AppTypes';
+import { type AppItem } from '../types/appTypes.ts';
 
 import PhoneMockup from '../assets/phone_apps.png';
 

@@ -1,9 +1,246 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+/*HEADER*/
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #382f46;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo{
+  height: 100px; /*tamaño*/
+  object-fit: contain;
+}
+
+.barra-navegacion {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* valor del espacio por pixeles */
+
+}
+
+/* Estilos para todos los enlaces del menú */
+.barra-navegacion a {
+  text-decoration: none; /* quita el subrayado */
+  color: #fff; /* color */
+  font-weight: bold;
+}
+
+.btn-porfolio {
+  padding: 10px 20px; /* Le da espacio interno al botón */
+  border: 1px solid #333; /* Un borde fino y oscuro */
+  border-radius: 5px; /* Suaviza las esquinas */
+  background-color: transparent; /* Hace el fondo transparente */
+  color: #545d91; /* El color del texto del botón */
+  transition: all 0.3s ease; /* Prepara un efecto de transición suave */
+}
+
+/* Efecto */
+.btn-porfolio:hover {
+  background-color: #413fa7;
+  color: #fff;
+}
+
+/* CUERPO */
+.main-content {
+  flex-grow: 1;
+  padding: 2rem 1rem;
+}
+
+/* Sección Inicio */
+.seccion-inicio {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  gap: 450px; /* Espacio entre el texto y la imagen del teléfono */
+  padding: 80px 2rem; /* Espacio interno para que no se vea pegado */
+}
+
+.botones-inicio {
+  display: flex;
+  gap: 15px; /* Un espacio de 15 píxeles entre los botones */
+  align-items: center; /* Alinea los botones verticalmente si tienen tamaños diferentes */
+}
+/* Estilos del botón base para reutilizar */
+.botones-inicio a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Estilo del botón azul sólido (Ver nuestras apps) */
+.btn-solid {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+}
+
+/* Estilo del botón con solo el borde (Contáctanos) */
+.btn-outline {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+}
+
+/* Efectos al pasar el mouse */
+.btn-solid:hover {
+  background-color: #0056b3;
+}
+
+.btn-outline:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.img-app-inicio{
+  height: 400px; /*tamaño*/
+  object-fit: contain;
+}
+
+/*Sección APPS*/
+/* Estilo de la Tarjeta Individual: Sombra y Bordes */
+.app-card {
+  background-color: #000000;
+  border-radius: 12px;
+  /* 💡 Flexbox: La clave para que el visual y el contenido se alineen */
+  display: flex; 
+  align-items: center; /* Centra los elementos verticalmente */
+  gap: 20px; /* Espacio entre la imagen y el texto */
+  padding: 20px; /* Relleno interno para que el contenido no pegue los bordes */
+  
+  /* Sombra sutil */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+              0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Contenedor de la cuadrícula de tarjetas (app-card-grid) */
+.app-card-grid {
+  display: grid;
+  /* Dos columnas de igual ancho con un espacio de 30px */
+  grid-template-columns: 1fr 1fr; 
+  gap: 30px; 
+  margin: 3rem auto; /* Centra el grid */
+  max-width: 900px; /* Controla el ancho máximo de la cuadrícula */
+  padding: 0 1rem;
+}
+
+/* Contenedor de la Imagen (Columna Izquierda) */
+.card-visual {
+  /* Controlamos el tamaño de la imagen */
+  width: 25%; 
+  max-width: 100px; /* Máximo 100px para que no sea gigante */
+  height: auto;
+}
+
+/* 💡 Estilo de la Imagen: Se ve completa y contenida */
+.app-mockup-img {
+  width: 100%;
+  height: auto;
+  /* 'contain' asegura que el celular completo entre en el espacio sin recortar */
+  object-fit: contain; 
+  display: block; 
+}
+
+/* Contenedor del Contenido (Columna Derecha) */
+.card-content-area {
+  /* Permite que ocupe el espacio restante dentro del Flexbox de .app-card */
+  flex-grow: 1; 
+}
+/* Contenedor de los Botones de Descarga */
+.card-downloads {
+  /* ✅ Flexbox: La clave para poner los botones uno al lado del otro */
+  display: flex;
+  gap: 10px; /* Espacio entre los botones de descarga */
+  margin-top: 15px; /* Separa los botones de la descripción */
+  justify-content: flex-start; /* Alinea los botones a la izquierda */
+}
+
+/* Estilos de los Botones de Descarga dentro de la tarjeta */
+.btn-download {
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  /* IMPORTANTE: Los botones deben poder ocupar el espacio disponible */
+  flex-grow: 1;
+}
+
+/* Estilos específicos de los botones (ejemplo, puedes ajustarlos) */
+.btn-google {
+  background-color: #4285f4; 
+  color: #fff;
+  border: 1px solid #4285f4;
+}
+
+.btn-apple {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.card-footer-stats {
+  display: flex;
+  /* 💡 Flexbox: Esto separa la calificación (izquierda) de las descargas (derecha) */
+  justify-content: space-between; 
+  align-items: center;
+  
+  font-size: 0.9rem; /* Un tamaño de letra ligeramente más pequeño */
+  color: #777; /* Color de texto más sutil, gris */
+  padding-top: 10px; /* Un poco de espacio arriba para separarlo de los botones */
+  
+}
+
+/* Puedes darle un toque extra de color a la calificación si quieres */
+.card-footer-stats span:first-child {
+    color: #ffc107; /* Color amarillo/ámbar para la calificación */
+    font-weight: bold;
+}
+
+
+
+
+
+/* FOOTER */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333; /* Un gris oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 1rem;
+}
+
+
+
+
+
+
 
 .logo {
   height: 6em;

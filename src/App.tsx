@@ -1,5 +1,4 @@
 
-import logoCamadi from './assets/logoCamadi.png'
 import phoneApps from './assets/phone_apps.png'
 import './App.css'
 import Layout from './components/Layout';

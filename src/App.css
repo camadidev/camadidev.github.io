@@ -167,6 +167,21 @@ body {
   /* Permite que ocupe el espacio restante dentro del Flexbox de .app-card */
   flex-grow: 1; 
 }
+
+.category-tag {
+  /* 💡 Fondo y bordes redondeados para el estilo de "pill" (píldora) */
+  background-color: #e0f7fa; /* Un color de fondo muy suave, casi blanco azulado */
+  color: #007bff; /* El texto usa un color primario (azul) para ser legible */
+  
+  padding: 4px 10px; /* Relleno interno para darle forma */
+  border-radius: 20px; /* Asegura un borde muy redondeado */
+  
+  font-size: 0.8rem; /* Tamaño de letra pequeño y discreto */
+  font-weight: 600; /* Un poco de negrita para que se note */
+  
+  /* Asegura que no se rompa la línea */
+  white-space: nowrap; 
+}
 /* Contenedor de los Botones de Descarga */
 .card-downloads {
   /* ✅ Flexbox: La clave para poner los botones uno al lado del otro */

@@ -27,9 +27,10 @@ function App() {
       </div>
 
       <div id="apps-seccion" className="seccion-apps">
-        <h2>Nuestras aplicaciones</h2>
 
+        <h2>Nuestras aplicaciones</h2>
         <div className="app-card-grid">
+
           {appsData.slice(0, 4).map((app) => (
             // La "key" es esencial en React para las listas
             <div key={app.id} className="app-card">
@@ -62,7 +63,7 @@ function App() {
                   <a href={app.appStoreLink} className="btn-download btn-apple">App Store</a>
                 </div>
 
-                
+
               </div>
             </div>
           ))}

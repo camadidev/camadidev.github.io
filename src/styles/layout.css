@@ -1,0 +1,56 @@
+/* layout.css */
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--header-bg); /* Usa variable si quieres */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+  height: 80px;
+  object-fit: contain;
+}
+
+.titulo-camadi {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.barra-navegacion {
+  display: flex;
+  gap: 20px;
+}
+
+.barra-navegacion a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.barra-navegacion a:hover {
+  color: var(--accent-color); /* Amarillo suave */
+}
+
+.btn-porfolio {
+  padding: 8px 16px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-porfolio:hover {
+  background-color: var(--accent-color);
+  color: #000;
+}
+

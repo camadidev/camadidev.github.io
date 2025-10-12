@@ -1,0 +1,45 @@
+/* Sección Contacto */
+.seccion-contacto {
+  padding: 6rem 1rem 4rem;
+  background-color: (--background-color);
+}
+
+.seccion-contacto h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contacto-item {
+  background-color: black;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contacto-item h3 {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+.contacto-item a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contacto-item a:hover {
+  color: var(--accent-color);
+}
+

@@ -1,0 +1,38 @@
+/* Sección Inicio */
+.seccion-inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 120px 2rem 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seccion-inicio h1 {
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  
+}
+
+.seccion-inicio p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.inicio-texto {
+  flex: 1;
+  text-align: left;
+}
+
+.img-app-inicio {
+  flex: 1;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+

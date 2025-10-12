@@ -16,7 +16,7 @@ export const appsData: AppItem[] = [
   },
   {
     id: 2,
-    name: "MiTVs",
+    name: "DIMAPLAY IPTV",
     description: "Reproductor de contenido M3U8",
     category: "Entretenimiento",
     rating: 4.8,

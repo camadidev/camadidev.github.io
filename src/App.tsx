@@ -121,7 +121,7 @@ function App() {
   <div className="contacto-grid">
     <div className="contacto-item">
       <h3>📧 Correo</h3>
-      <a href="mailto:camadicontacto@email.com">camadicontacto@email.com</a>
+      <a href="mailto:camadicontacto@gmail.com">camadicontacto@gmail.com</a>
     </div>
     <div className="contacto-item">
       <h3>📘 Facebook</h3>

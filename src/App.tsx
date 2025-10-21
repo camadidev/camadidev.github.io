@@ -12,6 +12,7 @@ import './styles/responsive.css';
 
 import Layout from './components/Layout';
 import { appsData } from './data/appsData';
+import ScrollToHash from './components/ScrollToHash';
 
 
 
@@ -21,6 +22,7 @@ function App() {
   return (
 
     <Layout>
+       <ScrollToHash />
       <div id="inicio-seccion" className="seccion-inicio">
   <div className="inicio-texto">
     <h1>Innovamos con apps que hacen tu vida más entretenida o más fácil</h1>
